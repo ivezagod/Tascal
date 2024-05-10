@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}"],
+  content: [ "./index.html",
+    "{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       backgroundImage: {
         'logo': "url('/media/logo/Tascal-Logo@4x.png')",
-        'hero':"url('../media/random/slika.png')"
+        'hero':"url('/media/random/slika.png')"
 
       },
       colors: {
@@ -15,10 +17,10 @@ export default {
       maxWidth:{
         container: "1440px"
       },
-      fontFamily: {
-        'main': ['montserrat']
+      fontFamily:{
+        'main':['montserrat']
       }
-    }
+    },
   },
   plugins: [],
 }
