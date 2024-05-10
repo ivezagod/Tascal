@@ -992,6 +992,10 @@ video {
   background-image: url('./media/random/slika.png');
 }
 
+.bg-\[url\(\'\/media\/Random\/slika\.png\'\)\] {
+  background-image: url('/media/Random/slika.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
