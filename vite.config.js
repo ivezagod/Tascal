@@ -17,7 +17,6 @@ export default defineConfig({
                 programing:'programing.html',
                 electricalSystemDesign:'electricalSystemDesign.html',
                 controlpanelsproduction:'controlPanelsProduction.html',
-                media:'media'
 
 
 
