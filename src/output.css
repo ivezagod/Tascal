@@ -989,7 +989,7 @@ video {
 }
 
 .bg-hero {
-  background-image: url('/media/random/slika.png');
+  background-image: url('./media/random/slika.png');
 }
 
 .bg-cover {
