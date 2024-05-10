@@ -9,14 +9,14 @@ export default defineConfig({
                 main: 'index.html',
                 about:'about.html',
                 app:'app.js',
-                aboutus:'aboutus.js',
+                aboutUs:'aboutus.js',
                 tailwind:'tailwind.config.js',
-                commisioning:'commissioning&StartUp.html',
-                consultiong:'conuslting.html',
+                commissioning:'commissioning&StartUp.html',
+                consulting:'consulting.html',
                 installation:'installation.html',
-                programing:'ptrograming.html',
+                programing:'programing.html',
                 electricalSystemDesign:'electricalSystemDesign.html',
-                controlpanelsproduction:'controlpanelsproduction.html',
+                controlpanelsproduction:'controlPanelsProduction.html',
 
 
 
