@@ -6,8 +6,13 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: './main.js',
-                about: './aboutus.js',
+                main: 'index.html',
+                about:'about.html',
+                app:'app.js',
+                aboutus:'aboutus.js',
+                tailwind:'tailwind.config.js'
+
+
             },
         },
     },
