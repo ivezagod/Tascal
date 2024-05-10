@@ -17,7 +17,7 @@ export default {
     extend: {
       backgroundImage: {
         'logo': "url('./media/logo/Tascal-Logo@4x.png')",
-        'hero':"url('./media/random/slika.png')"
+        'hero':"url('/media/random/slika.png')"
 
       },
       colors: {
