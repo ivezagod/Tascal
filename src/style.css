@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.active-nav {
+    background-color: #9ca3af; /* Your desired background color */
+}
+#navbar {
+    background-color: transparent;
+    transition: background-color 0.7s ease-in-out, padding-top 0.7s ease-in-out;
+    width: 100%;
+}
+
+#navbar img {
+    padding-top: 30px; /* Initial value */
+    transition: padding-top 0.7s ease-in-out;
+}
+
+#navbar ul {
+    padding-top: 60px; /* Initial value */
+    transition: padding-top 0.7s ease-in-out;
+}
+
+#navbar.scrolled {
+    background-color: #192436;
+}
+
+#navbar.scrolled img {
+    padding-top: 0;
+}
+
+#navbar.scrolled ul {
+    padding-top: 0;
+}
+
+
+
+
+
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 3s ease, left 2s ease;
+}
+
+.words {
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.show {
+    opacity: 1;
+}
+
+.circle.show {
+    left: 50%;
+    opacity: 1;
+}

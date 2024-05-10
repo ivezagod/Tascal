@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tascal</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../media/logo/SmallLogoLightGradient@4x.png">
+</head>
+<body class="bg-[#07131f] font-main">
+<nav id="navbar" class="bg-[#192436] w-screen fixed top-0 left-0  right-0 p-5 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <img src="../media/logo/Tascal-Logo@4x.png" alt="Tascal Logo" width="200" height="70">
+        <ul class="text-white text-sm  gap-[30px] justify-end  items-center hidden xl:flex">
+            <li class="p-2 mr-[50px] bg-[#486BA3] hover:bg-white hover:text-[#486BA3]"><a href="https://dbstudio.rs/tascal/flajer/">BROCHURE</a></li>
+            <li class="hover:text-[#486BA3]"><a  href="index.html">HOME</a></li>
+            <li class="hover:text-[#486BA3]"><a href="about.html">ABOUT US</a></li>
+            <li class="relative hover:text-[#486BA3]">
+                <a href="#section3" class="flex items-center" id="servicesLink">SERVICES
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                <div id="servicesDropdown" class="hidden absolute right-[40px] bg-[#486BA3] rounded-md shadow-lg mt-2  w-[300px]">
+                    <a href="consulting.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONSULTING</a>
+                    <a href="electricalSystemDesign.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">ELECTRICAL SYSTEM DESIGN</a>
+                    <a href="programing.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">PROGRAMMING</a>
+                    <a href="commissioning&StartUp.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">COMMISSIONING & STARTUP</a>
+                    <a href="installation.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">INSTALLATION</a>
+                    <a href="controlPanelsProduction.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONTROL PANELS PRODUCTION</a>
+                    <a href="maintenance.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">MAINTENANCE</a>
+                </div>
+            </li>
+            <li class="hover:text-[#486BA3]"><a href="#section4">REFERENCES</a></li>
+            <li class="hover:text-[#486BA3]"><a href="#section5">CONTACT</a></li>
+            <li class="hover:text-[#486BA3]"><a href="#section5">GALLERY</a></li>
+            <li class="hover:text-[#486BA3]"><a class="flex items-center" href="#section5">ENG
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a></li>
+        </ul>
+        <div class=" relative xl:hidden block">
+            <svg id="burgerMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+            <div id="burgerDropDown" class="hidden absolute  bg-[#486BA3] right-0 left-[-750px]   rounded-md shadow-lg mt-[40px] w-[800px] ">
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONSULTING</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">ELECTRICAL SYSTEM DESIGN</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">PROGRAMMING</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">COMMISSIONING & STARTUP</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">INSTALLATION</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONTROL PANELS PRODUCTION</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">MAINTENANCE</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div class="bg-hero bg-center bg-cover bg-no-repeat h-screen w-screen flex items-center justify-center ">
+    <div class="flex flex-col  text-white items-center justify-center    font-extrabold">
+        <h2 class="text-7xl w-[800px]  text-center">CONTROL PANELS PRODUCTION </h2>
+        <div class="flex gap-2">
+            <p class="hover:text-[#486BA3]"><a href="index.html">Home</a></p>
+            <p>/</p>
+            <p class="text-[#486BA3]">Control panels production</p>
+        </div>
+
+
+    </div>
+</div>
+
+<main class="max-w-container px-[75px] lg:px-[150px] mx-auto">
+
+    <div class=" ">
+        <p class="font-extralight text-lg text-[#8C929B]  pt-[40px] pb-[30px]">TASCAL ENGENERING</p>
+        <h1 class="text-5xl text-white font-extrabold">Control panels production</h1>
+        <div class="line bg-[#486BA3] w-[50px] h-[2px] mt-[30px]"></div>
+        <div class="text-white flex flex-col gap-[20px]">
+            <p class="flex ">
+
+            <p class="">Being specialized in the design and construction of electrical panels means that our company has expertise in creating customized electrical control panels that are specifically tailored to meet the needs of commercial and industrial plants:
+
+            <div class="flex flex-col">
+            <p>Control automation panels for operating machines,</p>
+            <ol>
+                <li>• Air conditioning panels for large buildings,</li>
+                <li>• Industrial and PLC panels,</li>
+                <li>• Power Group panels,</li>
+                <li>• Machine border panels,</li>
+                <li>• Distribution panels etc.</li>
+            </ol>
+
+        </div>
+
+
+            <p>
+                By having all the necessary tools and equipment in one place - our wellequipped control panel workshop in Moscow and Podgorica, we can customize control panels to meet the specific needs of our customers and ensure that they are of high quality.
+            </p>
+
+            <p>
+                Our official partnership with Eaton Corp. as a registered panel-builder within the Eaton Power Advantage Partner Program demonstrates our company’s expertise and commitment to produce high-quality electrical cabinets.
+            </p>
+
+            <p>
+                Our panel engineers are also site engineers involved with installation, software design and commissioning. This means they have a truly indepth understanding of controls and integration, and have extensive HVAC and plant knowledge.
+            </p>
+            <p>
+                The team creating our panels know exactly what they are being for, how they will be installed, and have a real understanding of the projects themselves. They are not just following a panel diagram.
+            </p>
+
+            <p>
+                We design our own control panel/switchgear units inhouse. For this purpose, the our electrical engineers use the EPLAN Electric P8 CAE tool. Following the actual electrical design phase, a 3D structural design is also implemented in Pro Panel, as well as Eaton’s or ABB’s configuration and pricing software that enables our experts to design, configure and calculate the cost of low-voltage switchgear assemblies (Eaton Configurator xEnergy, ABB e-Design).
+
+
+            </p>
+
+            <p class="">All equipment is powered up at the factory and fully tested for functionality prior to leaving our facility. Our internal procedures and standards ensure that our panels are delivered ready for field startup and commissioning.
+            </p>
+            </p>
+
+            <p>
+                Take comfort that your control panels&systems are designed by a staff with years of experience and Professional Engineering licenses held in multiple states (Russian Federation, Serbia, Montenegro). We are the control panel experts, so you do not have to be. Contact us and we will develop an optimum controls solution for you.
+            </p>
+            
+
+        </div>
+
+        <div class="bg-red-500 w-full h-[600px] my-[50px]">asd</div>
+
+    </div>
+</main>
+
+<footer class="bg-[#D3D3D3] w-full  justify-center">
+    <div class=" max-w-container p-[30px]  mx-auto ">
+        <div class="flex">
+            <img src="../media/logo/Tascal-Logo-Dark@4x.png" alt="" width="200" height="60" class="mr-[150px]">
+            <ul class="flex p-5 gap-[10px]">
+                <li class="hover:text-[#486BA3]">HOME</li>
+                <li class="hover:text-[#486BA3]">ABOUT US</li>
+                <li class="hover:text-[#486BA3]">SERVICES</li>
+                <li class="hover:text-[#486BA3]">REFERENCES</li>
+                <li class="hover:text-[#486BA3]">CONTACT</li>
+            </ul>
+
+        </div>
+        <div class="line bg-black h-3 w-full h-[1px]  my-[50px]"></div>
+        <p class="text-xl font-light">© 2023 TASCAL ENGINEERING</p>
+    </div>
+</footer>
+<script src="../aboutus.js"></script>
+</body>
+</html>

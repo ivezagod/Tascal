@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tascal</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../media/logo/SmallLogoLightGradient@4x.png">
+</head>
+<body class="bg-[#07131f] font-main">
+<nav id="navbar" class="bg-[#192436] w-screen fixed top-0 left-0  right-0 p-5 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <img src="../media/logo/Tascal-Logo@4x.png" alt="Tascal Logo" width="200" height="70">
+        <ul class="text-white text-sm  gap-[30px] justify-end  items-center hidden xl:flex">
+            <li class="p-2 mr-[50px] bg-[#486BA3] hover:bg-white hover:text-[#486BA3]"><a href="https://dbstudio.rs/tascal/flajer/">BROCHURE</a></li>
+            <li class="hover:text-[#486BA3]"><a  href="index.html">HOME</a></li>
+            <li class="hover:text-[#486BA3]"><a href="about.html">ABOUT US</a></li>
+            <li class="relative hover:text-[#486BA3]">
+                <a href="#section3" class="flex items-center" id="servicesLink">SERVICES
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                <div id="servicesDropdown" class="hidden absolute right-[40px] bg-[#486BA3] rounded-md shadow-lg mt-2  w-[300px]">
+                    <a href="consulting.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONSULTING</a>
+                    <a href="electricalSystemDesign.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">ELECTRICAL SYSTEM DESIGN</a>
+                    <a href="programing.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">PROGRAMMING</a>
+                    <a href="commissioning&StartUp.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">COMMISSIONING & STARTUP</a>
+                    <a href="installation.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">INSTALLATION</a>
+                    <a href="controlPanelsProduction.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONTROL PANELS PRODUCTION</a>
+                    <a href="maintenance.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">MAINTENANCE</a>
+                </div>
+            </li>
+            <li class="hover:text-[#486BA3]"><a href="#section4">REFERENCES</a></li>
+            <li class="hover:text-[#486BA3]"><a href="#section5">CONTACT</a></li>
+            <li class="hover:text-[#486BA3]"><a href="#section5">GALLERY</a></li>
+            <li class="hover:text-[#486BA3]"><a class="flex items-center" href="#section5">ENG
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a></li>
+        </ul>
+        <div class=" relative xl:hidden block">
+            <svg id="burgerMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+            <div id="burgerDropDown" class="hidden absolute  bg-[#486BA3] right-0 left-[-750px]   rounded-md shadow-lg mt-[40px] w-[800px] ">
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONSULTING</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">ELECTRICAL SYSTEM DESIGN</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">PROGRAMMING</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">COMMISSIONING & STARTUP</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">INSTALLATION</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONTROL PANELS PRODUCTION</a>
+                <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">MAINTENANCE</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div class="bg-hero bg-center bg-cover bg-no-repeat h-screen w-screen flex items-center justify-center ">
+    <div class="flex flex-col text-white items-center justify-center    font-extrabold">
+        <h2 class="text-7xl ">ABOUT US </h2>
+        <div class="flex gap-2">
+            <p class="hover:text-[#486BA3]"><a href="index.html">Home</a></p>
+            <p>/</p>
+            <p class="text-[#486BA3]"> About us</p>
+        </div>
+
+
+    </div>
+</div>
+
+<main class="max-w-container px-[75px] lg:px-[150px] mx-auto">
+        <div class=" ">
+            <p class="font-extralight text-lg text-[#8C929B]  pt-[40px] pb-[30px]">TASCAL</p>
+            <h1 class="text-5xl text-white font-extrabold">About us</h1>
+            <div class="line bg-[#486BA3] w-[50px] h-[2px] mt-[30px]"></div>
+            <div class="text-white flex flex-col gap-[20px]">
+                <p class="flex ">
+                <p class=""><span class="font-extrabold">TASCAL</span> <img class="mr-[6px] mb-[10px] inline-block" src="../media/logo/logo-small-01.svg" alt="" width="10" height="18"><span class="font-extrabold">ENGINEERING</span>  is a company for the design and execution of all electrical installations of high and low current, programming and commissioning of IT systems, technical security systems and automatic control and management systems (EMS, BMS, RMS) in commercial construction and industry.
+
+            </p>
+                </p>
+                <p>
+                    We are registered for production and have our own plant for the production of all types of low-voltage switchgear, metering-distribution and specific technological, control-management cabinets (DDC, MCC).
+                </p>
+                <p>
+                    <span class="font-extrabold">TASCAL</span> <img class="mr-[6px] mb-[10px] inline-block" src="../media/logo/logo-small-01.svg" alt="" width="10" height="18"><span class="font-extrabold">ENGINEERING</span>  consists of a team of professionals with many years of experience on the domestic and international market, who possess the appropriate licenses for design & construction, revision of technical documentation & supervision during the construction phase. We have licenses issued by the competent ministry and the Engineering Chamber of Montenegro, as well as the Engineering Chamber of Serbia and the competent associations of designers and contractors in the Russian Federation.
+                </p>
+                <p>
+                    The level at which we provide our services to clients is recognized by the world's leading vendors in this industry, with whom we cooperate, and which is crowned by the official partner status (most often the highest level, Solution Partner):
+                </p>
+            </div>
+
+        </div>
+
+    <div class="flex w-full gap-[20px] my-[40px]">
+        <div class="w-1/5 h-[100px] bg-red-500">asd</div>
+        <div class="w-1/5 h-[100px] bg-red-500">asd</div>
+        <div class="w-1/5 h-[100px] bg-red-500">asd</div>
+        <div class="w-1/5 h-[100px] bg-red-500">asd</div>
+        <div class="w-1/5 h-[100px] bg-red-500">asd</div>
+
+    </div>
+
+    <div class="flex flex-col gap-[20px]">
+        <p class="text-white">In the production of all types of electrical cabinets, but also in the field of delivery of electrical accessories (Hager, Berker) and the application of proven and innovative KNX technical solutions, we often rely on the HAGER Group in our work, whose partners we are through the regional center in Vogošća.</p>
+        <p class="text-white">Project and workshop documentation is created in our company using licensed AutoCAD, Microsoft Office, ePLAN, Siemens, Eaton, ABB software packages.</p>
+        <p class="text-white">The own production of distribution and control cabinets is organized in Podgorica, Montenegro.</p>
+        <p class="text-white">The implemented integrated management system in the field of quality, environmental protection and occupational safety has as a result the confirmed fact that the services we provide are in accordance with the requirements of the ISO 9001:2015, ISO 14001:2015 and ISO 45001:2018 standards.</p>
+    </div>
+
+    <div class="flex justify-center px-[150px] xl:px-[300px] items-center gap-[30px] py-[30px]">
+        <div class="w-1/3 h-[170px] bg-red-500">asd</div>
+        <div class="w-1/3 h-[170px] bg-red-500">asd</div>
+        <div class="w-1/3 h-[170px] bg-red-500">asd</div>
+    </div>
+
+    <div class="flex flex flex-col xl:flex xl:flex-row items-center gap-[10px] mb-[10px]">
+        <div class="xl:w-1/4 w-full h-[370px] h-auto bg-red-500">asd</div>
+        <div class="xl:w-1/4 w-full h-[370px] bg-red-500">asd</div>
+        <div class="xl:w-1/4 w-full h-[370px] bg-red-500">asd</div>
+        <div class="xl:w-1/4 w-full h-[370px] bg-red-500">asd</div>
+    </div>
+
+    <div class="flex flex-col xl:flex xl:flex-row items-center gap-[10px]">
+        <div class="xl:w-1/4 w-full h-[370px] h-auto bg-red-500">asd</div>
+        <div class="xl:w-1/4 w-full h-[370px] bg-red-500">asd</div>
+        <div class="xl:w-1/4 w-full h-[370px] bg-red-500">asd</div>
+        <div class="xl:w-1/4 w-full h-[370px] bg-red-500">asd</div>
+    </div>
+
+    <marquee direction="left" behavior="scroll" scrollamount="10" class="my-[150px]" >
+        <div class="flex">
+            <img src="../media/Partnerships/Eaton@4x.png" alt="Image 1" width="200" height="200">
+            <img src="../media/Partnerships/Hager@4x.png" alt="Image 2" width="200" height="200">
+            <img src="../media/Partnerships/Loxone@4x.png" alt="Image 3" width="200" height="200">
+            <img src="../media/Partnerships/Siemens@4x.png" alt="Image 4" width="200" height="200">
+            <img src="../media/Partnerships/Smarteh@4x.png" alt="Image 5" width="200" height="200">
+        </div>
+
+    </marquee>
+
+    <div class="flex items-center justify-center gap-[50px] justify-evenly" id="counterSection">
+        <div class="text-white flex flex-col items-center">
+            <p class="text-6xl font-extrabold" data-final-value="20">0</p>
+            <p>YEARS OF EXPERIENCE</p>
+        </div>
+
+        <div class="text-white flex flex-col items-center">
+            <p class="text-6xl font-extrabold" data-final-value="250">0</p>
+            <p>FINISHED PROJECTS</p>
+        </div>
+
+        <div class="text-white flex flex-col items-center">
+            <p class="text-6xl font-extrabold" data-final-value="200">0</p>
+            <p>SATISFIED CLIENTS</p>
+        </div>
+    </div>
+
+
+    <marquee direction="left" behavior="scroll" scrollamount="10" class="my-[150px]" >
+        <div class="flex">
+            <img src="../media/Partnerships/Eaton@4x.png" alt="Image 1" width="200" height="200">
+            <img src="../media/Partnerships/Hager@4x.png" alt="Image 2" width="200" height="200">
+            <img src="../media/Partnerships/Loxone@4x.png" alt="Image 3" width="200" height="200">
+            <img src="../media/Partnerships/Siemens@4x.png" alt="Image 4" width="200" height="200">
+            <img src="../media/Partnerships/Smarteh@4x.png" alt="Image 5" width="200" height="200">
+        </div>
+
+    </marquee>
+
+</main>
+
+<footer class="bg-[#D3D3D3] w-full  justify-center">
+    <div class=" max-w-container p-[30px]  mx-auto ">
+        <div class="flex">
+            <img src="../media/logo/Tascal-Logo-Dark@4x.png" alt="" width="200" height="60" class="mr-[150px]">
+            <ul class="flex p-5 gap-[10px]">
+                <li class="hover:text-[#486BA3]">HOME</li>
+                <li class="hover:text-[#486BA3]">ABOUT US</li>
+                <li class="hover:text-[#486BA3]">SERVICES</li>
+                <li class="hover:text-[#486BA3]">REFERENCES</li>
+                <li class="hover:text-[#486BA3]">CONTACT</li>
+            </ul>
+
+        </div>
+        <div class="line bg-black h-3 w-full h-[1px]  my-[50px]"></div>
+        <p class="text-xl font-light">© 2023 TASCAL ENGINEERING</p>
+    </div>
+</footer>
+<script src="../aboutus.js"></script>
+</body>
+</html>

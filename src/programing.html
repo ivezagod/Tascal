@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tascal</title>
+  <link href="./output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../media/logo/SmallLogoLightGradient@4x.png">
+</head>
+<body class="bg-[#07131f] font-main">
+<nav id="navbar" class="bg-[#192436] w-screen fixed top-0 left-0  right-0 p-5 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <img src="../media/logo/Tascal-Logo@4x.png" alt="Tascal Logo" width="200" height="70">
+    <ul class="text-white text-sm  gap-[30px] justify-end  items-center hidden xl:flex">
+      <li class="p-2 mr-[50px] bg-[#486BA3] hover:bg-white hover:text-[#486BA3]"><a href="https://dbstudio.rs/tascal/flajer/">BROCHURE</a></li>
+      <li class="hover:text-[#486BA3]"><a  href="index.html">HOME</a></li>
+      <li class="hover:text-[#486BA3]"><a href="about.html">ABOUT US</a></li>
+      <li class="relative hover:text-[#486BA3]">
+        <a href="#section3" class="flex items-center" id="servicesLink">SERVICES
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+        <div id="servicesDropdown" class="hidden absolute right-[40px] bg-[#486BA3] rounded-md shadow-lg mt-2  w-[300px]">
+          <a href="consulting.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONSULTING</a>
+          <a href="electricalSystemDesign.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">ELECTRICAL SYSTEM DESIGN</a>
+          <a href="programing.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">PROGRAMMING</a>
+          <a href="commissioning&StartUp.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">COMMISSIONING & STARTUP</a>
+          <a href="installation.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">INSTALLATION</a>
+          <a href="controlPanelsProduction.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONTROL PANELS PRODUCTION</a>
+          <a href="maintenance.html" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">MAINTENANCE</a>
+        </div>
+      </li>
+      <li class="hover:text-[#486BA3]"><a href="#section4">REFERENCES</a></li>
+      <li class="hover:text-[#486BA3]"><a href="#section5">CONTACT</a></li>
+      <li class="hover:text-[#486BA3]"><a href="#section5">GALLERY</a></li>
+      <li class="hover:text-[#486BA3]"><a class="flex items-center" href="#section5">ENG
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+      </a></li>
+    </ul>
+    <div class=" relative xl:hidden block">
+      <svg id="burgerMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+
+      <div id="burgerDropDown" class="hidden absolute  bg-[#486BA3] right-0 left-[-750px]   rounded-md shadow-lg mt-[40px] w-[800px] ">
+        <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONSULTING</a>
+        <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">ELECTRICAL SYSTEM DESIGN</a>
+        <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">PROGRAMMING</a>
+        <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">COMMISSIONING & STARTUP</a>
+        <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">INSTALLATION</a>
+        <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">CONTROL PANELS PRODUCTION</a>
+        <a href="#section3" class="block px-6 py-3 text-white  hover:bg-white hover:text-[#486BA3]">MAINTENANCE</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<div class="bg-hero bg-center bg-cover bg-no-repeat h-screen w-screen flex items-center justify-center ">
+  <div class="flex flex-col text-white items-center justify-center    font-extrabold">
+    <h2 class="text-7xl ">PROGRAMING</h2>
+    <div class="flex gap-2">
+      <p class="hover:text-[#486BA3]"><a href="index.html">Home</a></p>
+      <p>/</p>
+      <p class="text-[#486BA3]">Programing</p>
+    </div>
+
+  </div>
+</div>
+
+<main class="max-w-container px-[75px] lg:px-[150px] mx-auto">
+
+  <div class=" ">
+    <p class="font-extralight text-lg text-[#8C929B]  pt-[40px] pb-[30px]">TASCAL ENGENERING</p>
+    <h1 class="text-5xl text-white font-extrabold">Programing</h1>
+    <div class="line bg-[#486BA3] w-[50px] h-[2px] mt-[30px]"></div>
+    <div class="text-white flex flex-col gap-[20px]">
+      <p class="flex ">
+      <p>
+      As a professional PLC programming service, we have extensive experience programming a wide range of Programmable Logic Controllers (PLCs) from various manufacturers.
+      </p>
+      <p class="">
+        This means that we can provide tailored solutions to clients who are looking to automate and control home&industrial processes using PLCs.
+      </p>
+      </p>
+
+      <p>
+        Our team of skilled engineers and technicians are familiar with the programming languages and software tools used by various PLC manufacturers, including Siemens, Smarteh, Hager, Loxone, among others. This enables us to offer our clients flexible and customized solutions that meet their specific requirements.
+      </p>
+
+      <p>
+        Whether our clients require programming for a smallscale control system or a large-scale automation project, we have the expertise to deliver high-quality programming solutions that are efficient, reliable, and cost-effective. Our team uses best practices in PLC programming to ensure that the programs we create are easy to maintain and update, and that they meet industry standards for safety and performance.
+      </p>
+
+
+      <p>
+        At our company, we are committed to providing our clients with top-notch PLC programming services that help them achieve their automation goals. So if you are looking for a reliable partner to help you program your PLCs, please don’t hesitate to contact us. We would be happy to discuss your project requirements and provide you with a customized solution that fits your needs.
+      </p>
+
+      <p>
+        As an organization that provides programming services, we can offer solutions for a wide variety of systems:
+      </p>
+
+
+
+      <div class="flex flex-col ">
+        <h5 class="font-bold">Building Automation Systems & Fire detection systems & Parking and garage gas detection systems & PA/VA
+        </h5>
+        <p></p>
+      </div>
+
+      <div class="flex flex-col ">
+        <h5 class="font-bold">Industrial Control Systems
+        </h5>
+        <p>We can provide solutions that help control and monitor HVAC, lighting, and other building systems. This may include systems for commercial buildings, hospitals, and schools.</p>
+      </div>
+
+      <div class="flex flex-col ">
+        <h5 class="font-bold">Home Automation Systems
+        </h5>
+        <p>We create complex control solutions that allow homeowners to remotely control and monitor their home appliances, lighting, and security systems using a smartphone or other device.</p>
+      </div>
+
+      <div class="flex flex-col ">
+        <h5 class="font-bold">Energy Management Systems
+        </h5>
+        <p>We develop control solutions that help businesses and organizations manage their energy consumption, optimize energy usage, and reduce energy costs.</p>
+      </div>
+
+      <div class="flex flex-col ">
+        <h5 class="font-bold mb-[20px]">In our work, we rely on various platforms to develop and deliver solutions for our clients:
+        </h5>
+       <ol class="flex flex-col gap-1">
+         <li>- Siemens Simatic PLCs in all kind of technological processes,</li>
+         <li>- Siemens Desigo, SMARTEH LPC and Loxone PLC devices in the hotel industry,</li>
+         <li>- KNX devices (Siemens Gamma, Hager) devices in the hotel industry&home automation systems,</li>
+         <li>- Siemens Cerberus Pro smart fire safety systems for fast, reliable fire detection, alarm signaling and control,</li>
+         <li>- Siemens Cerberus PACE, INTER-M and TOA - the high performing Public Address and Controlled</li>
+       </ol>
+      </div>
+
+    </div>
+
+    <div class="bg-red-500 w-full h-[600px] my-[50px]">asd</div>
+
+  </div>
+</main>
+
+<footer class="bg-[#D3D3D3] w-full  justify-center">
+  <div class=" max-w-container p-[30px]  mx-auto ">
+    <div class="flex">
+      <img src="../media/logo/Tascal-Logo-Dark@4x.png" alt="" width="200" height="60" class="mr-[150px]">
+      <ul class="flex p-5 gap-[10px]">
+        <li class="hover:text-[#486BA3]">HOME</li>
+        <li class="hover:text-[#486BA3]">ABOUT US</li>
+        <li class="hover:text-[#486BA3]">SERVICES</li>
+        <li class="hover:text-[#486BA3]">REFERENCES</li>
+        <li class="hover:text-[#486BA3]">CONTACT</li>
+      </ul>
+
+    </div>
+    <div class="line bg-black h-3 w-full h-[1px]  my-[50px]"></div>
+    <p class="text-xl font-light">© 2023 TASCAL ENGINEERING</p>
+  </div>
+</footer>
+<script src="../aboutus.js"></script>
+</body>
+</html>
