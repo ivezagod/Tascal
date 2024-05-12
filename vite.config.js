@@ -19,7 +19,8 @@ export default defineConfig({
                 controlpanelsproduction:'controlPanelsProduction.html',
                 references:'references.html',
                 gallery:'gallery.html',
-                maintenance:'maintenance.html'
+                maintenance:'maintenance.html',
+                contact:'contact.html'
 
 
 
