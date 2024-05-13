@@ -118,6 +118,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // English to Serbian translations
     const translations = {
         'HOME': 'POČETNA',
+        'BROCHURE':'BROŠURA',
+        'ELECTRICAL SYSTEMS DESIGN': 'DIZAJN ELEKTRIČNIH SISTEMA',
+        'COMMISSIONING & STARTUP': 'PUŠTANJE U RAD I POKRETANJE',
         'ABOUT US': 'O NAMA',
         'SERVICES': 'USLUGE',
         'REFERENCES': 'REFERENCE',
