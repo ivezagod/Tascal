@@ -133,12 +133,63 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-// Event listener for clicking on ENG link
-    const engLink = document.querySelector('#navbar a[href="#section5"]');
-    engLink.addEventListener('click', function(event) {
+// Event listener for clicking on ENG link in navbar
+    const srbLink = document.querySelector('#srbLink');
+    srbLink.addEventListener('click', function(event) {
         event.preventDefault();
         translatePageToSerbian();
     });
+
+// Event listener for clicking on SRB link in navbar
+    const engLink = document.querySelector(' #engLink');
+    engLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        // Implement the logic to revert to English
+        // For simplicity, let's assume there's a function called revertToEnglish() for this purpose
+        revertToEnglish();
+    });
+
+// Event listener for clicking on ENG link in burger menu
+    const srbLinkBurger = document.querySelector('#burgerDropDown #srbBurgerLink ');
+    srbLinkBurger.addEventListener('click', function(event) {
+        event.preventDefault();
+        translatePageToSerbian();
+    });
+
+// Event listener for clicking on SRB link in burger menu
+    const engLinkBurger = document.querySelector('#burgerDropDown #engBurgerLink');
+     engLinkBurger.addEventListener('click', function(event) {
+        event.preventDefault();
+        // Implement the logic to revert to English
+        // For simplicity, let's assume there's a function called revertToEnglish() for this purpose
+        revertToEnglish();
+    });
+
+    function revertToEnglish() {
+        // You need to implement the logic to revert to English here
+        // For demonstration purposes, let's just reload the page
+        location.reload();
+    }
+
+
+    const slider = document.querySelector('.slider');
+
+    function resetSlider() {
+        slider.appendChild(slider.firstElementChild.cloneNode(true));
+
+    }
+
+    function resetSliderRemove() {
+        slider.removeChild(slider.firstElementChild);
+        slider.appendChild(slider.firstElementChild.cloneNode(true));
+
+    }
+    resetSlider()
+
+
+    setInterval(resetSliderRemove, 5000);
+
+
 
 });
 

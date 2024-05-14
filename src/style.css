@@ -66,3 +66,47 @@ body {
     left: 50%;
     opacity: 1;
 }
+
+/* Default styling for ENG/SRB link */
+.lang-toggle {
+    color: white;
+}
+
+/* Styling for active ENG link */
+#navbar .active,
+#burgerDropDown .active {
+    color: blue;
+}
+.slider-wrapper{
+    width: 100%;
+
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider img {
+    margin-right: 20px;
+    animation: slide-left 5s linear infinite;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px)); /* Adjusted to include margin */
+    }
+}
+

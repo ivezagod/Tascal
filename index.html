@@ -37,11 +37,13 @@
             <li class="hover:text-[#486BA3]"><a href="references.html">REFERENCES</a></li>
             <li class="hover:text-[#486BA3]"><a href="contact.html">CONTACT</a></li>
             <li class="hover:text-[#486BA3]"><a href="gallery.html">GALLERY</a></li>
-            <li class="hover:text-[#486BA3]"><a class="flex items-center" href="#section5">ENG
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-            </a></li>
+            <div class="flex gap-[3px]">
+                <li class="hover:text-[#486BA3]"><a class="flex items-center" href="#section5" id="engLink">ENG</a></li>
+                <span>/</span>
+                <li class="hover:text-[#486BA3]"><a class="flex items-center" href="#section5" id="srbLink">SRB</a></li>
+            </div>
+
+
         </ul>
         <div class=" relative xl:hidden block text-white  text-3xl cursor-pointer">
             <svg id="burgerMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-9 h-9">
@@ -71,6 +73,11 @@
                 <a class="hover:text-white px-6 py-5 " href="references.html">REFERENCES</a>
                 <a class="hover:text-white px-6 py-5 " href="contact.html">CONTACT</a>
                 <a class="hover:text-white px-6 py-5 " href="gallery.html">GALLERY</a>
+                <div class="flex gap-[3px] px-6 py-5">
+                   <a class="flex items-center hover:text-[#486BA3]" href="#section5" id="engBurgerLink">ENG</a>
+                    <span>/</span>
+                <a class="flex items-center hover:text-[#486BA3] active:text-[#486BA3]" href="#section5" id="srbBurgerLink">SRB</a>
+                </div>
             </div>
 
 
@@ -289,16 +296,33 @@
         </div>
     </div>
 
-    <marquee direction="left" behavior="scroll" scrollamount="10" class="my-[150px]" >
-        <div class="flex">
-            <img src="/media/Partnerships/Eaton@4x.png" alt="Image 1" width="200" height="200">
-            <img src="/media/Partnerships/Hager@4x.png" alt="Image 2" width="200" height="200">
-            <img src="/media/Partnerships/Loxone@4x.png" alt="Image 3" width="200" height="200">
-            <img src="/media/Partnerships/Siemens@4x.png" alt="Image 4" width="200" height="200">
-            <img src="/media/Partnerships/Smarteh@4x.png" alt="Image 5" width="200" height="200">
-        </div>
+<!--    <marquee direction="left" behavior="scroll" scrollamount="10" class="my-[150px]" >-->
+<!--        <div class="flex">-->
+<!--            <img src="/media/Partnerships/Eaton@4x.png" alt="Image 1" width="200" height="200">-->
+<!--            <img src="/media/Partnerships/Hager@4x.png" alt="Image 2" width="200" height="200">-->
+<!--            <img src="/media/Partnerships/Loxone@4x.png" alt="Image 3" width="200" height="200">-->
+<!--            <img src="/media/Partnerships/Siemens@4x.png" alt="Image 4" width="200" height="200">-->
+<!--            <img src="/media/Partnerships/Smarteh@4x.png" alt="Image 5" width="200" height="200">-->
+<!--        </div>-->
 
-    </marquee>
+<!--    </marquee>-->
+
+    <div class="slider-wrapper">
+        <div class="slider-container">
+            <div class="slider my-[50px]">
+                <img src="/media/Partnerships/Eaton@4x.png" alt="Image 1" width="200" height="200">
+                <img src="/media/Partnerships/Hager@4x.png" alt="Image 2" width="200" height="200">
+                <img src="/media/Partnerships/Loxone@4x.png" alt="Image 3" width="200" height="200">
+                <img src="/media/Partnerships/Siemens@4x.png" alt="Image 4" width="200" height="200">
+                <img src="/media/Partnerships/Smarteh@4x.png" alt="Image 5" width="200" height="200">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 </main>
 
