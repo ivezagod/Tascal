@@ -1365,7 +1365,7 @@ body {
 
 .slider2 img {
   margin-right: 20px;
-  animation: slide-left 2s linear infinite;
+  animation: slide-left 5s linear infinite;
 }
 
 @keyframes slide-left {
