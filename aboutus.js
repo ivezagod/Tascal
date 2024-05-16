@@ -202,6 +202,52 @@ document.addEventListener('DOMContentLoaded', function() {
         translatePageToSerbian();
     });
 
+    function resetSlider() {
+        slider.appendChild(slider.firstElementChild.cloneNode(true));
+    }
+
+    function resetSliderRemove() {
+        slider.removeChild(slider.firstElementChild);
+        slider.appendChild(slider.firstElementChild.cloneNode(true));
+    }
+
+    let slider = document.querySelector('.slider');
+
+// Function to reset the slider after the animation ends
+    function resetSliderAnimation() {
+
+        resetSliderRemove();
+
+    }
+
+// Add animation end event listener to reset the slider
+    slider.addEventListener('animationiteration', resetSliderAnimation);
+
+    function resetSlider2() {
+        slider2.appendChild(slider2.firstElementChild.cloneNode(true));
+    }
+
+    function resetSliderRemove2() {
+        slider2.removeChild(slider2.firstElementChild);
+        slider2.appendChild(slider2.firstElementChild.cloneNode(true));
+    }
+
+    let slider2 = document.querySelector('.slider2');
+
+// Function to reset the slider after the animation ends
+    function resetSliderAnimation2() {
+
+        resetSliderRemove2();
+
+    }
+
+// Add animation end event listener to reset the slider
+    slider.addEventListener('animationiteration', resetSliderAnimation2);
+
+// Initial reset
+    resetSlider();
+resetSlider2()
+
 });
 
 

@@ -98,7 +98,39 @@ body {
 
 .slider img {
     margin-right: 20px;
-    animation: slide-left 5s linear infinite;
+    animation: slide-left 2s linear infinite;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px)); /* Adjusted to include margin */
+    }
+}
+.slider-wrapper2{
+    width: 100%;
+
+}
+
+.slider-container2 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider2 {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider2 img {
+    margin-right: 20px;
+    animation: slide-left 2s linear infinite;
 }
 
 @keyframes slide-left {

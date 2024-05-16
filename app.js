@@ -172,22 +172,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    const slider = document.querySelector('.slider');
-
     function resetSlider() {
         slider.appendChild(slider.firstElementChild.cloneNode(true));
-
     }
 
     function resetSliderRemove() {
         slider.removeChild(slider.firstElementChild);
         slider.appendChild(slider.firstElementChild.cloneNode(true));
+    }
+
+    let slider = document.querySelector('.slider');
+
+// Function to reset the slider after the animation ends
+    function resetSliderAnimation() {
+
+            resetSliderRemove();
 
     }
-    resetSlider()
+
+// Add animation end event listener to reset the slider
+    slider.addEventListener('animationiteration', resetSliderAnimation);
+
+// Initial reset
+    resetSlider();
 
 
-    setInterval(resetSliderRemove, 5000);
+
 
 
 
