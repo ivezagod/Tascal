@@ -25,7 +25,8 @@ export default {
 
       },
       maxWidth:{
-        container: "1440px"
+        container: "1440px",
+        picture: "1170px",
       },
       fontFamily:{
         'main':['montserrat']

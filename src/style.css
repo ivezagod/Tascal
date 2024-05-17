@@ -143,3 +143,31 @@ body {
     }
 }
 
+.custom-border {
+    border-width: 12px; /* Adjust the width as needed */
+}
+
+.dotted-background {
+    background-color: #192436; /* Base color */
+    background-image: radial-gradient(#486ba3 10%, transparent 10%);
+    background-size: 5px 5px; /* Size of each dot */
+    background-position: center;
+    width: 100%;
+    height: 100%; /* Full height */
+}
+
+.pagination-link {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #486BA3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.pagination-link.active {
+    background-color: #fff;
+    color: #486BA3;
+}
+
+

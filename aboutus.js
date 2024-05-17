@@ -248,6 +248,67 @@ document.addEventListener('DOMContentLoaded', function() {
     resetSlider();
 resetSlider2()
 
+
+
+    const referenceContainer = document.querySelector('.max-w-picture');
+    const paginationContainer = document.getElementById('pagination');
+    const itemsPerPage = 4; // Adjust as needed
+    let currentPage = 1;
+
+    function displayReferences(page) {
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const referenceItems = Array.from(referenceContainer.children);
+
+        referenceItems.forEach((item, index) => {
+            if (index >= startIndex && index < endIndex) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    function generatePagination() {
+        const totalItems = referenceContainer.children.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+        paginationContainer.innerHTML = '';
+
+        for (let i = 1; i <= totalPages; i++) {
+            const pageLink = document.createElement('a');
+            pageLink.href = '#';
+            pageLink.textContent = i;
+
+            if (i === currentPage) {
+                pageLink.classList.add('active');
+            }
+
+            pageLink.addEventListener('click', () => {
+                currentPage = i;
+                displayReferences(currentPage);
+                updatePaginationUI();
+            });
+
+            paginationContainer.appendChild(pageLink);
+        }
+    }
+
+    function updatePaginationUI() {
+        const pageLinks = Array.from(paginationContainer.children);
+
+        pageLinks.forEach((link, index) => {
+            if (index === currentPage - 1) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    displayReferences(currentPage);
+    generatePagination();
+
 });
 
 
