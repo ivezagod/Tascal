@@ -170,4 +170,13 @@ body {
     color: #486BA3;
 }
 
+.reference-size{
+    font-size: 24px;
+}
+
+@media (max-width: 800px) {
+    .reference-size {
+        font-size: 48px;
+    }
+}
 
