@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'GALLERY': 'GALERIJA',
         'WELCOME TO TASCAL ENGINEERING': 'DOBRODOŠLI U TASCAL INŽENJERING',
         'CONSULTING': 'KONSULTACIJE',
+        'Consulting': 'Konsultacije',
         'TASCAL ENGINEERING is a company for the design and execution of all electrical installations of high and low current, programming and commissioning of IT systems, technical security systems and automatic control and management systems (EMS, BMS, RMS) in commercial construction and industry.': 'TASCAL INŽENJERING je firma za projektovanje i izvođenje svih elektroinstalacija visokog i niskog napona, programiranje i puštanje u rad IT sistema, tehničkih sigurnosnih sistema i automatskih kontrolno-upravljačkih sistema (EMS, BMS, RMS) u komercijalnoj izgradnji i industriji.',
         'We are registered for production and have our own plant for the production of all types of low-voltage switchgear, metering-distribution and specific technological, control management cabinets (DDC, MCC).': 'Mi smo registrovani za proizvodnju i imamo vlastitu fabriku za proizvodnju svih vrsta niskonaponskih prekidača, mjerno-distributivnih i specifičnih tehnoloških, kontrolnih ormara (DDC, MCC).',
         'The long-term experience of our experts is a guarantee that we have the necessary knowledge to guide you through the individual stages or the entire process of planning, designing and the very realization of specific technical solutions.': 'Dugogodišnje iskustvo naših stručnjaka garancija je da posjedujemo potrebno znanje da vas provedemo kroz pojedinačne faze ili cijeli proces planiranja, dizajniranja i same realizacije specifičnih tehničkih rješenja.',
@@ -137,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'COMMISSIONING & START UP': 'PUŠTANJE U RAD & POKRETANJE',
         "Commissioning and start-up procedures are critical steps in the deployment of control systems. These procedures ensure that the control system operates as expected and meets the client’s requirements.": 'Procedura puštanja u rad i pokretanja su ključni koraci u implementaciji kontrolnih sistema. Ove procedure osiguravaju da kontrolni sistem radi kako je očekivano i ispunjava zahtjeve klijenta.',
         'CONTROL PANELS PRODUCTION': 'PROIZVODNJA KONTROLNIH PANELA',
+        'Control panels production': 'Proizvodnja kntrolnih panela',
         'TASCAL ENGINEERING is a manufacturer of Electrical Panels and assemblies for clients in a wide range of industries. We offer custom design and fabrication for OEM clients, contractors, and end users requiring either large or small production runs.': 'TASCAL INŽENJERING je proizvođač električnih panela i sklopova za klijente u različitim industrijama. Nudimo prilagođeni dizajn i proizvodnju za OEM klijente, izvođače radova i krajnje korisnike koji zahtijevaju velike ili male serije proizvodnje.',
         'MAINTENANCE': 'ODRŽAVANJE',
         'Regular maintenance of electrical installations is important to ensure the safety of people working in the facility, as well as to prevent equipment failures and minimize downtime.': 'Redovno održavanje električnih instalacija važno je kako bi se osigurala sigurnost ljudi koji rade u objektu, kao i sprečavanje kvarova opreme i minimiziranje vremena prestanka rada.',
@@ -217,12 +219,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         'Siemens Desigo, SMARTEH LPC and Loxone PLC devices in the hotel industry,': 'Siemens Desigo, SMARTEH LPC i Loxone PLC uređaji u hotelijerstvu,',
 
-        'KNX devices (Siemens Gamma, Hager) devices in the hotel industry&home automation systems,': 'KNX uređaji (Siemens Gamma, Hager) u hotelijerstvu i sistemima kućne automatizacije,',
-        '- Siemens Simatic PLCs in all kind of technological processes': 'Siemens Simatic PLC-ovi u svim vrstama tehnoloških procesa',
-        '- Siemens Desigo, SMARTEH LPC and Loxone PLC devices in the hotel industry,': 'Siemens Desigo, SMARTEH LPC i Loxone PLC uređaji u hotelijerstvu,',
-        '- KNX devices (Siemens Gamma, Hager) devices in the hotel industry&home automation systems,': 'KNX uređaji (Siemens Gamma, Hager) u hotelijerstvu i sistemima kućne automatizacije,',
-        '- Siemens Cerberus PACE, INTER-M and TOA - the high performing Public Address and Controlled': 'Siemens Cerberus PACE, INTER-M i TOA - visoko performantni sistemi za javnu adresu i kontrolu',
-
+        'KNX devices (Siemens Gamma, Hager) devices in the hotel industry&home automation systems,': '- KNX uređaji (Siemens Gamma, Hager) u hotelijerstvu i sistemima kućne automatizacije,',
+        '- Siemens Simatic PLCs in all kind of technological processes': '- Siemens Simatic PLC-ovi u svim vrstama tehnoloških procesa',
+        '- Siemens Desigo, SMARTEH LPC and Loxone PLC devices in the hotel industry,': '- Siemens Desigo, SMARTEH LPC i Loxone PLC uređaji u hotelijerstvu,',
+        '- KNX devices (Siemens Gamma, Hager) devices in the hotel industry&home automation systems,': '- KNX uređaji (Siemens Gamma, Hager) u hotelijerstvu i sistemima kućne automatizacije,',
+        '- Siemens Cerberus PACE, INTER-M and TOA - the high performing Public Address and Controlled': '- Siemens Cerberus PACE, INTER-M i TOA - visoko performantni sistemi za javnu adresu i kontrolu',
+        '- Siemens Cerberus Pro smart fire safety systems for fast, reliable fire detection, alarm signaling and control,':'\n' +
+            '- Siemens Cerberus Pro pametni sistemi za zaštitu od požara za brzo i pouzdano otkrivanje požara, signalizaciju alarma i kontrolu.',
         'Commissioning & Start Up': 'Puštanje u rad i Pokretanje',
         'Pre-Commissioning Checks:': 'Provere pre puštanja u rad:',
         'Configuration and Testing:': 'Konfiguracija i testiranje:',
