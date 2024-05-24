@@ -766,6 +766,10 @@ video {
   margin-top: 8px;
 }
 
+.mb-\[15px\] {
+  margin-bottom: 15px;
+}
+
 .box-border {
   box-sizing: border-box;
 }

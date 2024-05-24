@@ -20,7 +20,17 @@ export default defineConfig({
                 references:'references.html',
                 gallery:'gallery.html',
                 maintenance:'maintenance.html',
-                contact:'contact.html'
+                contact:'contact.html',
+                annatiResort:'annatiResort.html',
+                fourSeason:'fourSeason.html',
+                grandHotel:'grandHotel.html',
+                greenLevel:'greenLevel.html',
+                rigaMall:'rigaMall.html',
+                rusnano:'rusnano.html',
+                seaFront:'seaFront.html',
+                seaStar:'seaStar.html',
+                tivatMontenegro:'tivatMontenegro.html',
+                unitC:'unitC.html',
 
 
 
