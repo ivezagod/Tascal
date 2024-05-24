@@ -21,7 +21,7 @@ export default defineConfig({
                 gallery:'gallery.html',
                 maintenance:'maintenance.html',
                 contact:'contact.html',
-                annatiResort:'annatiResort.html',
+                anantiResort:'anantiResort.html',
                 fourSeason:'fourSeason.html',
                 grandHotel:'grandHotel.html',
                 greenLevel:'greenLevel.html',
