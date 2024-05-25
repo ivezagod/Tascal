@@ -31,6 +31,7 @@ export default defineConfig({
                 seaStar:'seaStar.html',
                 tivatMontenegro:'tivatMontenegro.html',
                 unitC:'unitC.html',
+                stefanoRicci:'stefanoRicci.html'
 
 
 
