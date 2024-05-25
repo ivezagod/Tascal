@@ -77,9 +77,8 @@ body {
 #burgerDropDown .active {
     color: blue;
 }
-.slider-wrapper{
+.slider-wrapper {
     width: 100%;
-
 }
 
 .slider-container {
@@ -87,18 +86,17 @@ body {
     justify-content: center;
     overflow: hidden;
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .slider {
     display: flex;
-    overflow: hidden;
+    animation: slide-left 8s linear infinite;
 }
 
 .slider img {
     margin-right: 20px;
-    animation: slide-left 2s linear infinite;
 }
 
 @keyframes slide-left {
@@ -109,6 +107,7 @@ body {
         transform: translateX(calc(-100% - 20px)); /* Adjusted to include margin */
     }
 }
+
 
 .slider-wrapper2{
     width: 100%;

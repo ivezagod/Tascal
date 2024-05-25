@@ -171,24 +171,9 @@ document.addEventListener('DOMContentLoaded', function() {
         location.reload();
     }
 
-    let slider = document.querySelector('.slider');
-    function resetSlider() {
-        slider.appendChild(slider.firstElementChild.cloneNode(true));
-    }
-
-    function resetSliderRemove() {
-        slider.removeChild(slider.firstElementChild);
-       resetSlider()
-    }
 
 
 
-
-
-    slider.addEventListener('animationiteration', resetSliderRemove);
-
-
-    resetSlider()
 
 
 

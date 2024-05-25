@@ -661,17 +661,12 @@ video {
   margin-bottom: 50px;
 }
 
-.my-\[70px\] {
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
 
-.mb-\[10px\] {
-  margin-bottom: 10px;
+.mb-\[15px\] {
+  margin-bottom: 15px;
 }
 
 .mb-\[20px\] {
@@ -738,10 +733,6 @@ video {
   margin-right: 50px;
 }
 
-.mr-\[6px\] {
-  margin-right: 6px;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -766,20 +757,12 @@ video {
   margin-top: 8px;
 }
 
-.mb-\[15px\] {
-  margin-bottom: 15px;
-}
-
 .box-border {
   box-sizing: border-box;
 }
 
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -1035,11 +1018,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-\[\#07131f\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 19 31 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#192436\] {
   --tw-bg-opacity: 1;
   background-color: rgb(25 36 54 / var(--tw-bg-opacity));
@@ -1125,11 +1103,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .px-\[150px\] {
   padding-left: 150px;
   padding-right: 150px;
@@ -1148,11 +1121,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .py-\[30px\] {
@@ -1394,7 +1362,7 @@ body {
   color: blue;
 }
 
-.slider-wrapper{
+.slider-wrapper {
   width: 100%;
 }
 
@@ -1403,18 +1371,17 @@ body {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .slider {
   display: flex;
-  overflow: hidden;
+  animation: slide-left 8s linear infinite;
 }
 
 .slider img {
   margin-right: 20px;
-  animation: slide-left 2s linear infinite;
 }
 
 @keyframes slide-left {
