@@ -174,12 +174,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
-
-
 });
 
+document.addEventListener('scroll', function() {
+    const imageContainer = document.getElementById('image-container');
+    const rect = imageContainer.getBoundingClientRect();
 
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        imageContainer.classList.add('scrolled');
+    } else {
+        imageContainer.classList.remove('scrolled');
+    }
+});

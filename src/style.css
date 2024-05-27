@@ -179,3 +179,30 @@ body {
     }
 }
 
+.border-container {
+    position: relative;
+    display: inline-block;
+}
+
+.border-image {
+    display: block;
+    position: relative;
+    z-index: 1; /* Ensure the image is above the border */
+}
+
+.border-container::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    right: -80px;
+    bottom: 80px;
+    border: 10px solid #B0B0B0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 0; /* Ensure the border is below the image */
+}
+
+.border-container:hover::before {
+    transform: translate(-100px, 80px);
+}
+
