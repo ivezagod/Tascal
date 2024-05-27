@@ -1563,6 +1563,11 @@ body {
     left: 200px;
   }
 
+  .xl\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .xl\:ml-0 {
     margin-left: 0px;
   }
