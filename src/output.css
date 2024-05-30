@@ -1608,6 +1608,26 @@ body {
     margin-top: 50px;
   }
 
+  .xl\:ml-\[220px\] {
+    margin-left: 220px;
+  }
+
+  .xl\:ml-\[180px\] {
+    margin-left: 180px;
+  }
+
+  .xl\:ml-\[150px\] {
+    margin-left: 150px;
+  }
+
+  .xl\:ml-\[160px\] {
+    margin-left: 160px;
+  }
+
+  .xl\:ml-\[170px\] {
+    margin-left: 170px;
+  }
+
   .xl\:block {
     display: block;
   }

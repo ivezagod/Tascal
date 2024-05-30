@@ -80,15 +80,16 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     // English to Serbian translations
     const translations = {
+
         'HOME': 'POČETNA',
         'ABOUT US': 'O NAMA',
         'ELECTRICAL SYSTEM DESIGN': 'DIZAJN ELEKTRIČNIH SISTEMA',
         'COMMISSIONING & STARTUP': 'PUŠTANJE U RAD I POKRETANJE',
-        'BROCHURE':'BROŠURA',
+        'BROCHURE': 'BROŠURA',
         'SERVICES': 'USLUGE',
         'REFERENCES': 'REFERENCE',
         'CONTACT': 'KONTAKT',
-        'GALLERY':'GALERIJA',
+        'GALLERY': 'GALERIJA',
         'WELCOME TO TASCAL ENGINEERING': 'DOBRODOŠLI U TASCAL INŽENJERING',
         'CONSULTING': 'KONSULTACIJE',
         'TASCAL ENGINEERING is a company for the design and execution of all electrical installations of high and low current, programming and commissioning of IT systems, technical security systems and automatic control and management systems (EMS, BMS, RMS) in commercial construction and industry.': 'TASCAL INŽENJERING je firma za projektovanje i izvođenje svih elektroinstalacija visokog i niskog napona, programiranje i puštanje u rad IT sistema, tehničkih sigurnosnih sistema i automatskih kontrolno-upravljačkih sistema (EMS, BMS, RMS) u komercijalnoj izgradnji i industriji.',
@@ -104,16 +105,13 @@ document.addEventListener('DOMContentLoaded', function() {
         'Regular maintenance of electrical installations is important to ensure the safety of people working in the facility, as well as to prevent equipment failures and minimize downtime.': 'Redovno održavanje električnih instalacija važno je kako bi se osigurala sigurnost ljudi koji rade u objektu, kao i sprečavanje kvarova opreme i minimiziranje vremena prestanka rada.',
         'About Us': 'O NAMA',
         'MORE ABOUT US': 'VIŠE O NAMA',
-
         'INSTALLATION': 'INSTALACIJA',
         'At TASCAL ENGINEERING, we are committed to providing top-quality electrical installation services to our commercial and industrial clients. We understand that a properly installed electrical system is crucial for the safe and efficient operation of any commercial or industrial facility.': 'U TASCAL INŽENJERINGU, posvećeni smo pružanju visokokvalitetnih usluga električne instalacije našim komercijalnim i industrijskim klijentima. Razumijemo da je pravilno instaliran električni sistem ključan za siguran i efikasan rad svakog komercijalnog ili industrijskog objekta.',
-
-
-
         'PROGRAMMING': 'PROGRAMIRANJE',
-        'In order to ensure the successful implementation of turnkey projects, our team is equipped with the technical and personnel capabilities to parameterize, configure, and program various central and peripheral devices of various subsystems.': 'Kako bismo osigurali uspješnu implementaciju ključ u ruke projekata, naš tim je opremljen tehničkim i kadrovskim sposobnostima za parametrizaciju, konfiguraciju i programiranje različitih centralnih i perifernih uređaja različitih podsistema.',
+        'In order to ensure the successful implementation of turnkey projects, our team is equipped with the technical and personnel capabilities to parameterize, configure, and program various central and peripheral devices of various subsystems.': 'Kako bismo osigurali uspješnu implementaciju ključ u ruke projekata, naš tim je opremljen tehničkim i kadrovskim sposobnostima za parametrizaciju, konfiguraciju i programiranje različitih centralnih i perifernih uređaja različitih podsistema.'
 
-    };
+
+};
 
 
 
