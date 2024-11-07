@@ -300,6 +300,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         'Distribution panels etc.': 'Distribucioni paneli itd.',
 
+        'Electrical Cabinet - Our BIM Model': 'Razvodni ormar - Naš BIM model.',
+
         'By having all the necessary tools and equipment in one place - our well-equipped control panel workshop in Moscow and Podgorica, we can customize control panels to meet the specific needs of our customers and ensure that they are of high quality.': 'Imajući sve potrebne alate i opremu na jednom mestu - naša dobro opremljena radionica za kontrolne panele u Moskvi i Podgorici, možemo prilagoditi kontrolne panele specifičnim potrebama naših kupaca i osigurati da su visokog kvaliteta.',
 
         'Our official partnership with Eaton Corp. as a registered panel-builder within the Eaton Power Advantage Partner Program demonstrates our company’s expertise and commitment to produce high-quality electrical cabinets.':'Naše zvanično partnerstvo sa Eaton Corp. kao registrovanim proizvođačem panela u okviru Eaton Power Advantage Partner Program-a pokazuje stručnost naše kompanije i posvećenost proizvodnji visokokvalitetnih električnih ormara.',
@@ -307,6 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Our panel engineers are also site engineers involved with installation, software design and commissioning. This means they have a truly in-depth understanding of controls and integration, and have extensive HVAC and plant knowledge.': 'Naši inženjeri za panele su takođe terenski inženjeri uključeni u instalaciju, dizajn softvera i puštanje u rad. To znači da imaju istinski duboko razumevanje kontrole i integracije, kao i obimno znanje o HVAC sistemima i postrojenjima.',
 
         'The team creating our panels know exactly what they are being for, how they will be installed, and have a real understanding of the projects themselves. They are not just following a panel diagram.': 'Tim koji kreira naše panele tačno zna za šta se koriste, kako će biti instalirani i imaju pravo razumevanje samih projekata. Oni ne prate samo dijagram panela.',
+
 
         'We design our own control panel/switchgear units in-house. For this purpose, the our electrical engineers use the EPLAN Electric P8 CAE tool. Following the actual electrical design phase, a 3D structural design is also implemented in Pro Panel, as well as Eaton’s or ABB’s configuration and pricing software that enables our experts to design, configure and calculate the cost of low-voltage switchgear assemblies (Eaton Configurator xEnergy, ABB e-Design).': 'Mi dizajniramo naše sopstvene kontrolne panele/jedinice za razvod u kući. U tu svrhu naši električni inženjeri koriste EPLAN Electric P8 CAE alat. Nakon stvarne faze električnog dizajna, 3D strukturni dizajn se takođe implementira u Pro Panel, kao i Eaton-ov ili ABB-ov softver za konfiguraciju i cenu koji omogućava našim stručnjacima da dizajniraju, konfigurišu i izračunaju trošak sklopova niskonaponskih razvodnih ormana (Eaton Configurator xEnergy, ABB e-Design).',
 };
