@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/media/logo/SmallLogoLightGradient@4x.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body class="bg-[#192436]  font-main">
 <nav id="navbar" class="bg-[#192436] w-screen fixed top-0 left-0  right-0 p-5 z-50">
@@ -98,9 +103,9 @@
     </div>
 </div>
 
-<main class="max-w-container px-[75px] lg:px-[150px] mx-auto">
+<main class="max-w-container px-[75px] lg:px-[150px] mx-auto ">
 
-    <div class=" ">
+    <div class="w-full h-full max-w-screen-md max-h-screen-md" >
         <p class="font-extralight text-lg text-[#8C929B]  pt-[40px] pb-[30px]">TASCAL ENGENERING</p>
         <h1 class="text-5xl text-white font-extrabold">Electrical system design</h1>
         <div class="line bg-[#486BA3] w-[50px] h-[2px] mt-[30px]"></div>
@@ -124,6 +129,90 @@
         </div>
 
     </div>
+
+    <div class="w-full h-[500px] my-20 border border-red my-[50px]" id="three-container"></div>
+
+
+
+
+
+
+
+    <script>
+        const container = document.querySelector('#three-container'); // Use specific ID for container
+
+        // Set up the scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true });  // Transparent background
+        renderer.setClearColor(0x000000, 0);
+
+        // Set the canvas size to match the container
+        renderer.setSize(container.offsetWidth, container.offsetHeight);
+        container.appendChild(renderer.domElement);
+
+        // Add controls to move the object
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.enableZoom = true;
+
+        // Load the 3D model
+        const objLoader = new THREE.OBJLoader();
+        objLoader.load('media/3D/objekat1.obj', (object) => {
+            // Optional: Apply a basic material if the object has none
+            object.traverse((child) => {
+                if (child.isMesh && !child.material) {
+                    child.material = new THREE.MeshStandardMaterial({ color: 0x888888 });  // Default gray color
+                }
+            });
+
+            // Center the object
+            const boundingBox = new THREE.Box3().setFromObject(object);
+            const objectCenter = boundingBox.getCenter(new THREE.Vector3());
+            object.position.sub(objectCenter);  // Adjust the object's position to center it
+
+            scene.add(object);
+        });
+
+        // Add an ambient light for overall illumination
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft white light
+        scene.add(ambientLight);
+
+        // Add a directional light to create shadows and highlights
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(5, 10, 7.5); // Position the light
+        directionalLight.castShadow = true;        // Enable shadow casting if needed
+        scene.add(directionalLight);
+
+        // Set camera position
+        camera.position.z = 5;
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+
+        // Initial animation
+        animate();
+
+        // Resize handling (if the container size changes dynamically)
+        window.addEventListener('resize', () => {
+            // Update the canvas size to match the container
+            renderer.setSize(container.offsetWidth, container.offsetHeight);
+            camera.aspect = container.offsetWidth / container.offsetHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+
+
+
+
+
+
+
 </main>
 
 <footer class="bg-[#D3D3D3] w-full  justify-center">
@@ -144,5 +233,7 @@
     </div>
 </footer>
 <script type="module" src="./aboutus.js"></script>
+
+
 </body>
 </html>
