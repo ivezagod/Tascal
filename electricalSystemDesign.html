@@ -137,74 +137,87 @@
 
 
 
-
     <script>
-        const container = document.querySelector('#three-container'); // Use specific ID for container
+        // Wait until the window is loaded before starting the 3D scene initialization
+        window.onload = function () {
+            const container = document.querySelector('#three-container'); // Use specific ID for container
 
-        // Set up the scene, camera, and renderer
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ alpha: true });  // Transparent background
-        renderer.setClearColor(0x000000, 0);
+            // Set up the scene, camera, and renderer
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ alpha: true });  // Transparent background
+            renderer.setClearColor(0x000000, 0);
 
-        // Set the canvas size to match the container
-        renderer.setSize(container.offsetWidth, container.offsetHeight);
-        container.appendChild(renderer.domElement);
-
-        // Add controls to move the object
-        const controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.05;
-        controls.enableZoom = true;
-
-        // Load the 3D model
-        const objLoader = new THREE.OBJLoader();
-        objLoader.load('media/3D/objekat1.obj', (object) => {
-            // Optional: Apply a basic material if the object has none
-            object.traverse((child) => {
-                if (child.isMesh && !child.material) {
-                    child.material = new THREE.MeshStandardMaterial({ color: 0x888888 });  // Default gray color
-                }
-            });
-
-            // Center the object
-            const boundingBox = new THREE.Box3().setFromObject(object);
-            const objectCenter = boundingBox.getCenter(new THREE.Vector3());
-            object.position.sub(objectCenter);  // Adjust the object's position to center it
-
-            scene.add(object);
-        });
-
-        // Add an ambient light for overall illumination
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft white light
-        scene.add(ambientLight);
-
-        // Add a directional light to create shadows and highlights
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-        directionalLight.position.set(5, 10, 7.5); // Position the light
-        directionalLight.castShadow = true;        // Enable shadow casting if needed
-        scene.add(directionalLight);
-
-        // Set camera position
-        camera.position.z = 5;
-
-        // Animation loop
-        function animate() {
-            requestAnimationFrame(animate);
-            controls.update();
-            renderer.render(scene, camera);
-        }
-
-        // Initial animation
-        animate();
-
-        // Resize handling (if the container size changes dynamically)
-        window.addEventListener('resize', () => {
-            // Update the canvas size to match the container
+            // Set the canvas size to match the container
             renderer.setSize(container.offsetWidth, container.offsetHeight);
-            camera.aspect = container.offsetWidth / container.offsetHeight;
-            camera.updateProjectionMatrix();
-        });
+            container.appendChild(renderer.domElement);
+
+            // Add controls to move the object
+            const controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.enableZoom = true;
+
+            // Lazy load the 3D model after the page content is loaded
+            if ('requestIdleCallback' in window) {
+                // Use requestIdleCallback if available
+                requestIdleCallback(load3DModel);
+            } else {
+                // Fallback to setTimeout if requestIdleCallback is not supported
+                setTimeout(load3DModel, 0);
+            }
+
+            // Function to load the 3D model
+            function load3DModel() {
+                const objLoader = new THREE.OBJLoader();
+                objLoader.load('media/3D/objekat1.obj', (object) => {
+                    // Optional: Apply a basic material if the object has none
+                    object.traverse((child) => {
+                        if (child.isMesh && !child.material) {
+                            child.material = new THREE.MeshStandardMaterial({ color: 0x888888 });  // Default gray color
+                        }
+                    });
+
+                    // Center the object
+                    const boundingBox = new THREE.Box3().setFromObject(object);
+                    const objectCenter = boundingBox.getCenter(new THREE.Vector3());
+                    object.position.sub(objectCenter);  // Adjust the object's position to center it
+
+                    scene.add(object);
+                });
+            }
+
+            // Add an ambient light for overall illumination
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft white light
+            scene.add(ambientLight);
+
+            // Add a directional light to create shadows and highlights
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+            directionalLight.position.set(5, 10, 7.5); // Position the light
+            directionalLight.castShadow = true;        // Enable shadow casting if needed
+            scene.add(directionalLight);
+
+            // Set camera position
+            camera.position.z = 5;
+
+            // Animation loop
+            function animate() {
+                requestAnimationFrame(animate);
+                controls.update();
+                renderer.render(scene, camera);
+            }
+
+            // Initial animation
+            animate();
+
+            // Resize handling (if the container size changes dynamically)
+            window.addEventListener('resize', () => {
+                // Update the canvas size to match the container
+                renderer.setSize(container.offsetWidth, container.offsetHeight);
+                camera.aspect = container.offsetWidth / container.offsetHeight;
+                camera.updateProjectionMatrix();
+            });
+        };
     </script>
 
 
