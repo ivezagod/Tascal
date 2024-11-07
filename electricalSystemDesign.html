@@ -170,7 +170,7 @@
             // Function to load the 3D model
             function load3DModel() {
                 const objLoader = new THREE.OBJLoader();
-                objLoader.load('media/3D/objekat1.obj', (object) => {
+                objLoader.load('/media/3D/objekat1.obj', (object) => {
                     // Optional: Apply a basic material if the object has none
                     object.traverse((child) => {
                         if (child.isMesh && !child.material) {
