@@ -144,11 +144,12 @@
         // Set up the scene, camera, and renderer
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ alpha: true });  // Transparent background
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });  // Enable antialias for smoother lines
         renderer.setClearColor(0x000000, 0);
 
         // Set the canvas size to match the container
         renderer.setSize(container.offsetWidth, container.offsetHeight);
+        renderer.setPixelRatio(window.devicePixelRatio); // Ensure better resolution on high DPI screens
         container.appendChild(renderer.domElement);
 
         // Add controls to move the object
@@ -191,7 +192,7 @@
         scene.add(directionalLight);
 
         // Set camera position
-        camera.position.z = 5;
+        camera.position.z = 2;
 
         // Animation loop
         function animate() {
@@ -207,10 +208,12 @@
         window.addEventListener('resize', () => {
             // Update the canvas size to match the container
             renderer.setSize(container.offsetWidth, container.offsetHeight);
+            renderer.setPixelRatio(window.devicePixelRatio); // Update pixel ratio on resize for better resolution
             camera.aspect = container.offsetWidth / container.offsetHeight;
             camera.updateProjectionMatrix();
         });
     </script>
+
 
 
 
